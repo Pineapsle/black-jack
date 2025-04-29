@@ -1,0 +1,114 @@
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #0b0c10;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #66fcf1;
+}
+
+.status.connected {
+  color: #66ff66;
+}
+
+.status.disconnected {
+  color: #ff6666;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.player-section, .dealer-section {
+  width: 40%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #1f2833;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #45a29e;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 80px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  font-size: 1.2rem;
+}
+
+.card .suit {
+  font-size: 1rem;
+  color: #555;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8f8f8;
+}
+
+.controls {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #45a29e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a29d8c;
+  color: #0b0c10;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.play-again {
+  margin-top: 1rem;
+  background-color: #66fcf1;
+  color: #0b0c10;
+}
